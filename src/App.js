@@ -9,6 +9,7 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Lok.it</h2>
+          {/*{this.props.children}*/}
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
@@ -17,5 +18,9 @@ class App extends Component {
     );
   }
 }
+
+// App.propTypes = {
+//   children: PropTypes.object.isRequired
+// };
 
 export default App;
