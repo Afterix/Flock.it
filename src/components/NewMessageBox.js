@@ -7,6 +7,7 @@ class NewMessageBox extends Component {
     return (
       <div className="NewMessageBox">
           <textarea placeholder="What's up?"></textarea>
+          <button>Send</button>
       </div>
     );
   }

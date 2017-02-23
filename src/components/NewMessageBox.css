@@ -8,11 +8,32 @@
     border-radius: 10px;
     border-color: #A6A2DC;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .NewMessageBox > textarea {
-    height: 100%;
+    flex: 2;
     width: 100%;
     border-style: none;
     font-size: 14px;
+}
+.NewMessageBox > textarea:focus {
+    outline: 0;
+}
+
+.NewMessageBox > button {
+    flex: 1;
+    font-size: 14px;
+    border-style: none;
+    border-radius: 10px;
+    background: #2C3F6B;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.NewMessageBox > button:focus {
+    outline: 0;
 }
