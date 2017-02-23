@@ -1,6 +1,7 @@
 import React from 'react';
 import {Route, IndexRoute} from 'react-router';
-import App from './components/MainPage';
+import App from './App';
+import MainPage from './components/MainPage';
 
 export default (
     <Route path="/" component={App}>
