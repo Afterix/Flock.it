@@ -3,11 +3,16 @@ import './NewMessageBox.css';
 
 
 class NewMessageBox extends Component {
+
+  handleSendClick = () => {
+    console.log("click!");
+  }
+
   render() {
     return (
       <div className="NewMessageBox">
           <textarea placeholder="What's up?"></textarea>
-          <button>Send</button>
+          <button onClick={this.handleSendClick}>Send</button>
       </div>
     );
   }

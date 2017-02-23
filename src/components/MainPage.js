@@ -1,14 +1,25 @@
 import React, {Component} from "react";
 import NewMessageBox from './NewMessageBox.js';
-import Message from './Message.js';
+import MessageTimeLine from './MessageTimeLine.js';
 import logo from '../logo.svg';
+import './MainPage.css'; 
 
 class MainPage extends Component{
     render(){
+        const messages = [
+            {
+                text : "test message one", 
+                profilePicSrc : logo
+            },
+            {
+                text : "test message two", 
+                profilePicSrc : logo
+            },
+        ];
         return (
-            <div>
+            <div className="mainContainer">
                 <NewMessageBox />
-                <Message message="test message" profilePictureSource={logo} />
+                <MessageTimeLine messages={messages}/>
             </div>
         );
     }
