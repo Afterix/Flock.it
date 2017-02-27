@@ -1,5 +1,6 @@
 
 .messageContainer {
+    position: relative;
     width: 80%;
     padding: 2%;
     margin-bottom: 2%;
@@ -18,4 +19,14 @@
     position: absolute;
     padding-left: 10px;
     padding-top: 10px;
+}
+
+.message-timestamp {
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: grey;
+    font-size: 12px;
+    padding: 5px;
 }
