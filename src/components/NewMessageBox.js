@@ -10,8 +10,10 @@ let NewMessageBox = ({dispatch}) => {
       <div className="NewMessageBox">
           <textarea ref={node => {textarea = node}} placeholder="What's up?"></textarea>
           <button onClick={event => {
-            dispatch(addNewMessage(textarea.value, "1"))
-            textarea.value = ''
+              if (textarea.value.length > 0) {
+                dispatch(addNewMessage(textarea.value, "1"))
+                textarea.value = ''
+              }
             }
           }>Send</button>
       </div>

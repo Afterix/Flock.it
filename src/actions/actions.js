@@ -7,3 +7,10 @@ export const addNewMessage = (text, userId) => {
     text : text
   }
 }
+
+export const deleteMessage = (messageId) => {
+  return {
+    type: 'DELETE_MESSAGE',
+    messageId : messageId 
+  }
+}

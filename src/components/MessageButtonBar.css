@@ -1,0 +1,14 @@
+.message-button-container {
+    text-align: right;
+}
+
+.message-button-container > button {
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+}
+.message-button-container > button:hover {
+    border: none;
+    background-color: transparent;
+    color: black;
+}

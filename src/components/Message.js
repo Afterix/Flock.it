@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import MessageButtonBar from './MessageButtonBar';
 import logo from '../logo.svg';
 import './Message.css'; 
 
@@ -10,6 +11,7 @@ class Message extends Component {
           <img className='profilePicture' src={logo}/>
           <div className='message-timestamp'>{this.props.timestamp.toLocaleString('en-US')}</div>
           <div className='message'>{this.props.message}</div>
+          <MessageButtonBar messageId={this.props.messageId} />
       </div>
     );
   }

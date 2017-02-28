@@ -22,6 +22,10 @@ const messages =  (state = [], action) => {
                 ...state,
                 message(undefined, action)
             ]
+        case 'DELETE_MESSAGE':
+            return state.filter((val) => {
+                return val.messageId !== action.messageId;
+            });
         default: 
             return state;
     }

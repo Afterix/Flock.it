@@ -8,8 +8,10 @@
 }
 
 .App-header {
-  background-color: #FFACAC;
-  height: 50px;
+  background-image: url('images/luis-llerena-14738.jpg');
+  background-size: 100%;
+  background-position-y: 344px;
+  height: 100px;
   padding: 20px;
   color:#565C98;
   text-align: left;
