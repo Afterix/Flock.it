@@ -1,10 +1,10 @@
 import React, {Component} from "react";
-import Message from './Message.js';
+import MessageContainer from './containers/MessageContainer';
 
 class MessageTimeLine extends Component{
     render(){
         let messages = this.props.messages.map((message) =>
-            <Message message={message.text} messageId={message.messageId} 
+            <MessageContainer message={message.text} messageId={message.messageId} 
             timestamp={message.timestamp} userId={message.userId}/>
         );
 

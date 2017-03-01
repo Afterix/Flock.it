@@ -26,6 +26,13 @@ const messages =  (state = [], action) => {
             return state.filter((val) => {
                 return val.messageId !== action.messageId;
             });
+        case 'EDIT_MESSAGE': 
+            state.map(function(msg) {
+                if (msg.messageId === action.messageId) {
+                    msg.text = action.text;
+                }
+            });
+            return [...state];
         default: 
             return state;
     }

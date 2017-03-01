@@ -23,11 +23,18 @@
 }
 
 .message-timestamp {
-    display: inline;
     position: absolute;
     top: 0;
     right: 0;
     color: grey;
     font-size: 12px;
     padding: 5px;
+}
+.messageContainer > textarea {
+    flex: 2;
+    width: 80%;
+    border-style: solid;
+    border-color: #ccc;
+    margin-top: 1em;
+    font-size: 14px;
 }

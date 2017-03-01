@@ -1,14 +1,40 @@
 .message-button-container {
     text-align: right;
+    padding-top: 1em;
 }
 
-.message-button-container > button {
+.message-button {
     border: none;
     background-color: transparent;
     color: #ccc;
 }
-.message-button-container > button:hover {
-    border: none;
-    background-color: transparent;
+.message-button:hover {
     color: black;
+}
+
+.message-button:focus {
+    outline: 0;
+    color: black;
+}
+
+.ok-button {
+    color: lightgreen;
+}
+.ok-button:hover {
+    color: green;
+}
+.ok-button:focus {
+    outline: 0;
+    color: green;
+}
+.cancel-button {
+    color: red;
+}
+
+.cancel-button:hover {
+    color: darkred;
+}
+.cancel-button:focus {
+    outline: 0;
+    color: darkred;
 }
