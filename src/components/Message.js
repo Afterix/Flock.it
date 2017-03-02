@@ -14,7 +14,9 @@ state = {
 }
 
 componentDidUpdate = () => {
-    this.textarea.focus();
+    if (this.state.isEditMode) {
+        this.textarea.focus();
+    }
 }
 
 onDeleteClick = () => {

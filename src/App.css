@@ -17,6 +17,10 @@
   text-align: left;
 }
 
+.App-header > h2 {
+  font-size: 40px;
+}
+
 .App-intro {
   font-size: large;
 }
